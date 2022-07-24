@@ -21,14 +21,14 @@
     echo "<div style='background-color:pink;height:100px;line-height:100px;font-size:36px;color:red;'>gcm</div>";
 
     $x = 10;
-    echo $x;
-    $add = function($a,$b){
-        return $a+$b;
+    echo $x++;
+    $add = function ($a, $b) {
+        return $a + $b;
     };
     $name = "gcm";
     echo "<hr>My name is" . $name;
     echo "<hr>My name is{$name}";
-    echo "<hr>" . $add(1,2);
+    echo "<hr>" . $add(1, 2);
     $str = "<table>";
     $str .= "<tr>";
     $str .= "<th>姓名</th>";
@@ -48,9 +48,52 @@
     $str .= "</table>";
 
     echo $str;
+    $flag = true;
+    $flag2 = false;
+    echo $flag;
+    echo $flag2;
+    // echo后面只能输出数字或字符串
+    // var_dump()显示变量相关属性
+    var_dump($flag);
+    $aa = 1;
+    $bb = "1";
+    var_dump($aa == $bb);
+
+
+    $money = 100;
+    if($money){
+        echo "===========================";
+    }
+    echo "<hr>";
+
+    $num = 1;
+    
+    switch($num){
+        case 1:$result = "星期一";break;
+        case 2:$result = "星期2";break;
+        case 3:$result = "星期3";break;
+        case 4:$result = "星期4";break;
+        case 5:$result = "星期5";break;
+        default:$result = "星期67";break;
+    }
+    echo $result;
 
     ?>
 
 </body>
+<style>
+    table {
+        width: 600px;
+        margin: 16px auto;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    table td,
+    table th {
+        border: 1px solid black;
+    }
+</style>
 
 </html>
