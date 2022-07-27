@@ -80,12 +80,16 @@
 
     echo "<hr>";
 
-    echo $arr = ['a' => 1,2,3,4,5];
+    $arr = ['a' => 1,2,3,4,5];
     foreach($arr as $k => $v){
         echo "<hr>";
         echo '$k:' . $k;
         echo '$v:' . $v;
     }
+    echo "<hr>";
+    print_r($arr);
+    echo "<hr>";
+    var_dump($arr);
 
     ?>
 
