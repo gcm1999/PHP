@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>helloPHP</title>
 </head>
-
+<style>
+    a{
+        background-color: pink;
+    }
+</style>
 <body>
+    <a href="./test.php">goTest</a>
+    <a href="./test2.php">goTest2</a>
     <h1>helloPHP</h1>
     <?php
     /* php代码必须放在<?php  ?>  */

@@ -1,3 +1,4 @@
+<a href="./index.php">back</a>
 <h1>test</h1>
 
 <?php
@@ -68,9 +69,9 @@ echo "<h2>test8</h2>";
 echo "<hr>";
 echo "<h2>test9</h2>";
 $arr = array(21, 35, 56, 50, 68, 68);
-$max=$arr[0];
-$min=$arr[0];
-foreach($arr as $a){
+$max = $arr[0];
+$min = $arr[0];
+foreach ($arr as $a) {
     $max = ($a > $max ? $a : $max);
     $min = ($a > $min ? $min : $a);
 }
@@ -79,7 +80,7 @@ echo "<hr>";
 echo "<h2>test10</h2>";
 for ($i = 0; $i < 10; $i++) {
     for ($j = 1; $j < $i + 1; $j++) {
-        echo "{$j}*{$i}=" . $i*$j . " ";
+        echo "{$j}*{$i}=" . $i * $j . " ";
     }
     echo "<br>";
 }
