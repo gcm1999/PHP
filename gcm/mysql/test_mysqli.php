@@ -28,25 +28,25 @@
     } else {
         echo "0 结果";
     }
-    // 预处理及绑定
-    $stmt = $conn->prepare("INSERT INTO stu(id,name) VALUES (?, ?)");
+    // // 预处理及绑定
+    // $stmt = $conn->prepare("INSERT INTO stu(id,name) VALUES (?, ?)");
     
-    $stmt->bind_param("is", $id, $name);
+    // $stmt->bind_param("is", $id, $name);
 
-    // 设置参数并执行
-    $id = null;
-    $name = "g1";
-    $stmt->execute();
+    // // 设置参数并执行
+    // $id = null;
+    // $name = "g1";
+    // $stmt->execute();
 
-    $name = "g2";
-    $stmt->execute();
+    // $name = "g2";
+    // $stmt->execute();
 
-    $name = "g3";
+    // $name = "g3";
 
-    $stmt->execute();
+    // $stmt->execute();
 
-    echo "新记录插入成功";
+    // echo "新记录插入成功";
 
-    $stmt->close();
+    // $stmt->close();
     $conn->close();
     ?>
